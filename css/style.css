@@ -1,12 +1,185 @@
 /* sayra */
 
+.navbar {
+  overflow: hidden;
+  background-color: none;
+  text-align: center;
+  z-index: 6;
+}
+
+.navLogo {
+  width: 200px;
+  height: auto;
+  display: inline;
+}
+
+.navbar a {
+ display: inline-block;
+ margin-right: -4px;
+ color: #fff;
+ padding: 20px 22px;
+ text-decoration: none;
+ font-family: 'Poppins', sans-serif;
+ font-size: 20px;
+ -webkit-transition: background 0.3s linear;
+ -moz-transition: background 0.3s linear;
+ -ms-transition: background 0.3s linear;
+ -o-transition: background 0.3s linear;
+ transition: background 0.3s linear;
+ z-index: 9;
+}
+
+.navbar a:hover {
+  background-color: #9FC490;
+  color: #465362;
+  cursor: pointer;
+}
+
+.navbar .icon {
+  display:none;
+}
+
+footer{
+  background: none;
+  padding: 90px 0;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.logo{
+  width: 200px;
+  height: auto;
+}
+
+.social-media{
+  margin: 20px 0;
+  padding-top: 0px;
+}
+
+.social-media a{
+  color: #9FC490;
+  margin-right: 25px;
+  font-size: 22px;
+  text-decoration: none;
+  transition: .3s linear;
+}
+
+.social-media a:hover{
+  color: #C0DFA1;
+}
+
+.right h1{
+  font-size: 26px;
+}
+
+.border{
+  width: 100px;
+  height: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #9FC490;
+}
+
+.newsletter-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.txtb{
+  flex: 1;
+  padding: 18px 40px;
+  margin-top: 25px;
+  font-size: 16px;
+  color: #465362;
+  background: #fff;
+  border: none;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  border-radius: 30px;
+  min-width: 260px;
+}
+
+.btn{
+  padding: 18px 40px;
+  margin-top: 25px;
+  font-size: 16px;
+  color: #f1f1f1;
+  background: #9FC490;
+  border: none;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  border-radius: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: opacity .3s linear;
+}
+
+.btn:hover{
+  opacity: .7;
+  color: #C0DFA1;
+}
+
+.page-content{
+  min-height: 100vh;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 
 
 
+#background-Video {
+    position: fixed;  /* keeps the video in place when user scrolls  */
+   min-width: 100%;   /* cover entire page */
+  min-height: 100%; /* cover entire page  */
+    object-fit: cover; /* sizes the background video to keep its original aspect ratio while filling the screen, clipping out edges of the video when necessary. */
+    z-index: -1; /* use this to send img to background */
+ }
 
 
+ .content {
+  text-align: center;
+ }
+/* texts on video */
+ .content h1 {
+color: #C0DFA1;
+font-size: 10 px;
+padding: 13px;
+font-family: 'Poppins', sans-serif;
+ }
+ 
+
+ .content h1 a {
+text-decoration: none;
+text-decoration-line: none;
+color: #C0DFA1;
+display: inline-block;
+border: 2px solid white;
+border-radius: 50px;
+padding: 20px;
+ }
+
+ .content h1 :hover {
+  color: #82A3A1;
+ }
+   
 
 
 
