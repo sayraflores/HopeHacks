@@ -60,12 +60,16 @@ body {
     text-align: center;
     z-index: 6;
 }
-  
+
+/* setting the style for the nav bar as a whole */
+
 .navLogo {
     width: 200px;
     height: auto;
     display: inline;
 }
+
+/* sizing the logo in the nav */
 
 .navbar a {
    display: inline-block;
@@ -82,6 +86,8 @@ body {
    transition: background 0.3s linear;
    z-index: 9;
 }
+
+/* setting style for the individual elements of the nav bar i.e home link and so on */
   
 .navbar a:hover {
     background-color: #9FC490;
@@ -89,6 +95,8 @@ body {
     cursor: pointer;
 }
   
+/* hover appearance */
+
 .navbar .icon {
     display:none;
 }
@@ -100,6 +108,9 @@ footer{
     font-family: 'Poppins', sans-serif;
 }
   
+/* setting the style for the wole footer */
+
+
 .footer-container{
     max-width: 1300px;
     margin: auto;
@@ -110,16 +121,22 @@ footer{
     flex-wrap: wrap-reverse;
 }
   
+/* sizing and adusting the footer container */
+
 .logo{
     width: 200px;
     height: auto;
 }
-  
+ 
+/* sizing logo in footer */
+
 .social-media{
     margin: 20px 0;
     padding-top: 0px;
 }
   
+/* sizing social media logos in footer */
+
 .social-media a{
     color: #9FC490;
     margin-right: 25px;
@@ -128,13 +145,19 @@ footer{
     transition: .3s linear;
 }
   
+/* styling social media logo links */
+
 .social-media a:hover{
     color: #C0DFA1;
 }
   
+/* social media hover styling */
+
 .right h1{
     font-size: 26px;
 }
+
+/* right side of the footer */
   
 .border{
     width: 100px;
@@ -144,12 +167,16 @@ footer{
     background: #9FC490;
 }
   
+/* line underneath footer text on right side */
+
 .newsletter-form{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
+
+/* placing the text input area */
   
 .txtb{
     flex: 1;
@@ -165,6 +192,8 @@ footer{
     border-radius: 30px;
     min-width: 260px;
 }
+
+/* textbox styling */
   
 .btn{
     padding: 18px 40px;
@@ -181,12 +210,16 @@ footer{
     cursor: pointer;
     transition: opacity .3s linear;
 }
-  
+
+/* styling the button in the footer */
+
 .btn:hover{
     opacity: .7;
     color: #C0DFA1;
 }
   
+/* how the hover over the button looks */
+
 .page-content{
     min-height: 100vh;
     font-size: 40px;
@@ -211,6 +244,7 @@ footer{
     }
 }
   
+/* right and left side of the footer */
   
 @media screen and (max-width:700px){
     .btn{
