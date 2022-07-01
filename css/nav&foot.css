@@ -20,6 +20,7 @@
 }  */
 
 .navbar {
+
   display: flex;
   overflow: hidden;
   background-color: none;
@@ -30,6 +31,12 @@
 }
 .navbar img {
   text-align: left;
+
+    overflow: hidden;
+    background-color: #011936;
+    text-align: center;
+    z-index: 6;
+
 }
 .navLogo {
   width: 200px;
@@ -54,20 +61,50 @@
 }
 
 .navbar a:hover {
+
   background-color: #9fc490;
   color: #465362;
   cursor: pointer;
+
+    background-color: #9FC490;
+    color:  #011936;
+    cursor: pointer;
+
 }
 
 .navbar .icon {
   display: none;
 }
 
+
 footer {
   background: none;
   padding: 90px 0;
   color: #fff;
   font-family: "Poppins", sans-serif;
+
+  
+footer{
+    background: #011936;
+    padding: 90px 0;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+  
+.footer-container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+  
+.logo{
+    width: 200px;
+    height: auto;
+
 }
 
 .footer-container {
