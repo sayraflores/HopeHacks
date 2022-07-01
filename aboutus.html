@@ -12,11 +12,36 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>About Us</title>
-    <link rel="shortcut icon" href="./images/peopleIcon.png" type="image/png" />
+    <link rel="stylesheet" href="./css/nav&foot.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
   </head>
-  <body id="aboutBody">
-    <h1 id="meetTeam">Meet the Team</h1>
+  <body>
+    <div class="navbar" id="navBar">
+      <img
+        src="/HopeHacks/images/BlueMarbleLogo.png"
+        alt="Webpage logo"
+        class="navLogo"
+      />
+      <a href="#home" title="Home">Home</a>
+      <a href="#learn" title="Learn">Learn</a>
+      <a href="#about" title="About">About Us</a>
+      <a href="#contact" title="Contact">Contact</a>
+      <a
+        href="javascript:void(0);"
+        title="Menu"
+        style="font-size: 18px"
+        class="icon"
+        onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
     <section id="teamPlayersGrid">
       <section id="devTyson">
         <img src="./images/Osvaldo.jpg" alt="Osvaldo Ruiz" />
@@ -45,6 +70,35 @@
         <p>A little about Alejandro</p>
       </section>
     </section>
+    <!-- creating the frameowrk for the navigation menu -->
+    <footer>
+      <div class="footer-container">
+        <div class="left">
+          <img
+            src="./images/BlueMarbleLogo.png"
+            class="logo"
+            alt="Webpage Logo"
+          />
+          <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+          <p class="copyright">Copyright &copy; 2022, Created By Blue Marble</p>
+        </div>
+        <!-- frameowrk for the left side of the footer in the container -->
+        <div class="right">
+          <h1>Our Newsletter</h1>
+          <div class="border"></div>
+          <p>Enter Your Email to get news and updates.</p>
+          <form action="" class="newsletter-form">
+            <input type="text" class="txtb" placeholder="Enter Your Email" />
+            <input type="submit" class="btn" value="Submit" />
+          </form>
+          <!-- framework for the right side of the footer that also contains a form -->
+        </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
