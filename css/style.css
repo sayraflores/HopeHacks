@@ -1,35 +1,60 @@
 /* sayra */
 
-
-
-
-
-
-
-
-
-
-
 /* tyson */
-
-
-
-
-
-
-
-
 
 /* alejandro */
 
-
-
-
-
-
-
 /* kyla */
 
-
-
 /* osvaldo */
+#aboutBody {
+  background-color: rgb(1, 25, 54);
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  background-color: rgb(1, 25, 54);
+  color: rgb(192, 223, 161);
+  text-align: center;
+}
+#meetTeam {
+  font-size: 50px;
+}
+#teamPlayersGrid {
+  margin-top: 5%;
+  display: grid;
+  column-gap: 5%;
+  row-gap: 30%;
+}
+img {
+  width: 300px;
+  height: 300px;
+}
+#devTyson {
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 1;
+}
+#devOsvaldo {
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row: 1;
+}
+#devSayra {
+  text-align: center;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row: 1;
+}
+#devKyla {
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 2;
+}
+#devAlejandro {
+  text-align: center;
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row: 2;
+}
