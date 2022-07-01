@@ -21,7 +21,7 @@
 
 .navbar {
     overflow: hidden;
-    background-color: none;
+    background-color: #011936;
     text-align: center;
     z-index: 6;
 }
@@ -50,7 +50,7 @@
   
 .navbar a:hover {
     background-color: #9FC490;
-    color: #465362;
+    color:  #011936;
     cursor: pointer;
 }
   
@@ -59,7 +59,7 @@
 }
   
 footer{
-    background: none;
+    background: #011936;
     padding: 90px 0;
     color: #fff;
     font-family: 'Poppins', sans-serif;
