@@ -1,0 +1,56 @@
+#aboutBody {
+    background-color: rgb(1, 25, 54);
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    background-color: rgb(1, 25, 54);
+    color: white;
+    text-align: center;
+  }
+  #meetTeam {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(192, 223, 161);
+    grid-column-start:1 ;
+    grid-column-end: 6;
+    grid-row:1; 
+  }
+  #teamPlayersGrid {
+    margin-top: 5%;
+    display: grid;
+    column-gap: 5%;
+    row-gap: 30%;
+  }
+  img {
+    width: 300px;
+    height: 300px;
+  }
+  #devTyson {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 2;
+  }
+  #devOsvaldo {
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 2;
+  }
+  #devSayra {
+    text-align: center;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row: 2;
+  }
+  #devKyla {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 3;
+  }
+  #devAlejandro {
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row: 3;
+  }
