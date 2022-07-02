@@ -26,6 +26,13 @@
     z-index: 6;
 }
   
+.navbar img {
+    text-align: left;
+     overflow: hidden;
+      background-color: #011936;
+      text-align: center;
+      z-index: 6;
+}
 .navLogo {
     width: 200px;
     height: auto;
