@@ -1,4 +1,38 @@
 /* sayra */
+#background-Video {
+    position: fixed;  /* keeps the video in place when user scrolls  */
+   min-width: 100%;   /* cover entire page */
+  min-height: 100%; /* cover entire page  */
+    object-fit: cover; /* sizes the background video to keep its original aspect ratio while filling the screen, clipping out edges of the video when necessary. */
+    z-index: -1; /* use this to send img to background */
+ }
+
+
+ .content {
+  text-align: center;
+ }
+ 
+/* texts on video */
+ .content h1 {
+color: #C0DFA1;
+font-size: 10 px;
+padding: 13px;
+font-family: 'Poppins', sans-serif;
+ }
+
+ .content h1 a {
+text-decoration: none;
+text-decoration-line: none;
+color: #C0DFA1;
+display: inline-block;
+border: 2px solid white;
+border-radius: 50px;
+padding: 20px;
+ }
+
+ .content h1 :hover {
+  color: #82A3A1;
+ }
 
 /* tyson */
 
