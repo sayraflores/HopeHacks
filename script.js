@@ -8,6 +8,7 @@ function myFunction() {
 }
 
 
+
  // SLIDESHOW STARTS HERE// 
 
 const carouselSlide = document.querySelector('.carousel-slide') // selecting div on html file//
@@ -19,4 +20,6 @@ const nextButtons = document.querySelector('#nextButton');
 
 // to monitor what image we are we need some sort of counter // 
 let counter = 1;
+
+
 
