@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/nav&foot.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="./images/learnIcon.png" type="image/png" />
+    <link rel="stylesheet" href="css/resource1.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
       rel="stylesheet"
@@ -56,6 +57,63 @@
       </div>
       <!-- creating the frameowrk for the navigation menu -->
     </section>
+    <main class="tools">
+    <h1>Measure your Carbon Footprint from Travel</h1>
+    <h3>Car Travel</h3>
+    <div class="searchBox">
+      <input type="text" id="distance" placeholder="distance mi" />
+      <!-- <input type="text" id="vehicle" placeholder="vehicle type" /> -->
+      <select id="myCar">
+        <option>Vehicle Type</option>
+        <option>SmallDieselCar</option>
+        <option>MediumDieselCar</option>
+        <option>LargeDieselCar</option>
+        <option>MediumHybridCar</option>
+        <option>SmallPetrolCar</option>
+        <option>MediumPetrolCar</option>
+        <option>LargePetrolCar</option>
+        <option>MediumMotorBike</option>
+        <option>LargeMotorBike</option>
+      </select>
+      <button id="search" class="api-button">search</button>
+      <div class="results"></div>
+    </div>    
+   
+   
+    <h3>Flight Travel</h3>
+    <div class="searchBox2">
+      <input type="text" id="flight-distance" placeholder="distance mi" />
+      <!-- <input type="text" id="flight" placeholder="flight type" /> -->
+      <select id="flight">
+        <option>Flight Type</option>
+        <option>DomesticFlight</option>
+        <option>ShortBusinessClassFlight</option>
+        <option>ShortBusinessClassFlight</option>
+        <option>LongEconomyClassFlight</option>
+        <option>LongPremiumClassFlight</option>
+        <option>LongBusinessClassFlight</option>
+        <option>LongFirstClassFlight</option>
+      </select>
+      <button id="search2" class="api-button">search</button>
+      <div class="testing"></div>
+    </div>
+
+    <h3>Public Transportation</h3>
+    <input type="text" id="public-distance" placeholder="distance mi" />
+      <!-- <input type="text" id="public-type" placeholder="Public Transportation type" /> -->
+      <select id="public-type">
+        <option>Public Type</option>
+        <option>Taxi</option>
+        <option>EcoBus</option>
+        <option>Coach</option>
+        <option>NationalTrain</option>
+        <option>LightRail</option>
+        <option>Subway</option>
+      </select>
+      <button id="search3" class="api-button">search</button>
+      <div class="testing3"></div>
+    </div>
+    </main>
     <footer>
       <div class="footer-container">
         <div class="left">
@@ -85,5 +143,6 @@
         </div>
       </div>
     </footer>
+    <script src="resource1.js"></script>
   </body>
 </html>
