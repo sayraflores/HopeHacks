@@ -46,5 +46,16 @@ padding: 20px;
  .content h1 :hover {
   color: #82A3A1;
  }
-   
 
+ .slideshow-container {
+  width: 40%; /*  moves content over  */
+  margin: auto; /* centers images on site */
+  /* overflow: hidden; */
+  border: 5px solid black; /* changes color of slideshow border */
+}
+
+.carousel-slide {
+display: flex; /* displays images next to each other */
+width: 100%;
+height: 500px;
+}
