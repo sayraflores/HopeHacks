@@ -7,20 +7,12 @@ const mongoose = require('mongoose');
 require('dotenv/config');
 const bodyParser = require('body-parser');
 
-//allows incoming API calls to not be blocked
-app.use(cors());
-
-
-
-
 
 // //middlewares - function that runs when route is visited
-// app.use('/hope1', ()=>{
-//     console.log('hello, tthis is a middle ware running')
-// })
-
 //converting posted data to json
 app.use(bodyParser.json());
+//allows incoming API calls to not be blocked
+app.use(cors());
 
 
 //importing every route from hope1.js 
