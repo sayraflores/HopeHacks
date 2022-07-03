@@ -1,11 +1,17 @@
 //imported express module
 const express = require('express');
-
+const cors = require('cors');
 //executing express
 const app = express();
 const mongoose = require('mongoose');
 require('dotenv/config');
 const bodyParser = require('body-parser');
+
+//allows incoming API calls to not be blocked
+app.use(cors());
+
+
+
 
 
 // //middlewares - function that runs when route is visited
@@ -48,3 +54,4 @@ app.listen(4000, (err) =>{
     }
     console.log('All good on port 4000')
 });
+

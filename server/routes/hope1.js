@@ -7,6 +7,7 @@ const Post = require('../models/HopeDb');
 //making routes outside of module for cleanliness to export them into another file
 
 
+//gets the data from all of the posts I've made
 router.get('/', async (req,res) => {
     try{
          //.find is a built in mongoose method that will return all of the posts you've made
@@ -19,7 +20,7 @@ router.get('/', async (req,res) => {
    
     
 });
-//turning the posts data into a new post, then saving it to our database
+//submits a post to our database
 router.post('/', async (req, res) => {
     const post = new HopeDb({
         year: req.body.year,
@@ -29,6 +30,7 @@ router.post('/', async (req, res) => {
         oil_co2_per_capita: req.body.oil_co2_per_capita,
         co2_growth_prct: req.body.co2_growth_prct
     });
+    //trying this block of code, if unsuccessful it will hit the catch block and return error message
     try{
         const savedPost = await post.save();
     res.json(savedPost);
@@ -42,5 +44,7 @@ router.post('/', async (req, res) => {
 // router.get('/specific', (req,res) => {
 //     res.send('specific post')
 // });
+
+router.get('/:')
 
 module.exports = router;
