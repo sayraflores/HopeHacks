@@ -6,71 +6,206 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blue Marble | Pollution</title>
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/testing.css" />
+    <!-- <link rel="stylesheet" href="./css/testing.css" /> -->
     <link rel="stylesheet" href="./css/nav&foot.css" />
-    <link rel="shortcut icon" href="./images/learnIcon.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./images/learnIcon.png" type="image/png" />
+    <link rel="stylesheet" href="css/resource1.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
   </head>
   <body>
     <!-- <div id="nav-logo">
       <a href="#home" title="Logo"></a>
       <img src="/HopeHacks/images/Grey and Black Minimalist Modern Typography Logo (3).png"
-            alt="Webpage logo" class="navLogo">
-    </div>   -->     
-    <div class="navbar" id="navBar">
-      <img src="images/BlueMarbleLogo.png" alt="Webpage logo" class="navLogo">
-      <a href="index.html" title="Home">Home</a>
-      <a href="resource1.html" title="Learn">Resources</a>
-      <a href="aboutus.html" title="About">About Us</a>
-      <a href="contact.html" title="Contact">Contact</a>
-      <a href="javascript:void(0);" title="Menu" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
-      </div>
-            <!-- creating the framework for the navigation menu -->
-      
-      
-          <video autoplay loop muted id ="background-Video">
-            <source src ="images/earth.mp4" type ="video/MP4">
-          </video>    
+            alt="Webpage logo" class="navLogo"> 
+    </div> 
           
           
-          <!-- <div class="content">
+          
+         <div class="content">
           <h1><a href="resource1.html">Click Here To Learn About Pollution</a></h1>
           </div> -->
-      
-          <section>
 
-            <div class="pollution">
-<div class="pollutionText">
-<p>Pollution is the introduction of harmful materials into the environment. These harmful materials are called pollutants.</p>
-</div>
-            </div>
-            
-          </section>
-            <footer>
-        <div class="footer-container">
-          <div class="left">
-            <img src="images/BlueMarbleLogo.png" class="logo" alt="Webpage Logo">
-            <div class="social-media">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p class="copyright">Copyright &copy; 2022, Created By Blue Marble</p>
-          </div>
+    <section>
+      <div class="navbar" id="navBar">
+        <a
+          ><img
+            src="images/BlueMarbleLogo.png"
+            alt="Webpage logo"
+            class="navLogo"
+        /></a>
+        <a href="index.html" title="Home">Home</a>
+        <a href="resource1.html" title="Learn">Resources</a>
+        <a href="aboutus.html" title="About">About Us</a>
+        <a href="contact.html" title="Contact">Contact</a>
+        <a href="resource2.html" title="map">Map</a>
+        <a
+          href="javascript:void(0);"
+          title="Menu"
+          style="font-size: 18px"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+      <!-- creating the frameowrk for the navigation menu -->
+    </section>
+    <main class="tools">
+    <h1>Measure your Carbon Footprint from Travel</h1>
+    <h3>Car Travel</h3>
+    <div class="searchBox">
+      <input type="text" id="distance" placeholder="distance mi" />
+      <!-- <input type="text" id="vehicle" placeholder="vehicle type" /> -->
+      <select id="myCar">
+        <option>Vehicle Type</option>
+        <option>SmallDieselCar</option>
+        <option>MediumDieselCar</option>
+        <option>LargeDieselCar</option>
+        <option>MediumHybridCar</option>
+        <option>SmallPetrolCar</option>
+        <option>MediumPetrolCar</option>
+        <option>LargePetrolCar</option>
+        <option>MediumMotorBike</option>
+        <option>LargeMotorBike</option>
+      </select>
+      <button id="search" class="api-button">search</button>
+      <div class="results"></div>
+    </div>    
+   
+   
+    <h3>Flight Travel</h3>
+    <div class="searchBox2">
+      <input type="text" id="flight-distance" placeholder="distance mi" />
+      <!-- <input type="text" id="flight" placeholder="flight type" /> -->
+      <select id="flight">
+        <option>Flight Type</option>
+        <option>DomesticFlight</option>
+        <option>ShortBusinessClassFlight</option>
+        <option>ShortBusinessClassFlight</option>
+        <option>LongEconomyClassFlight</option>
+        <option>LongPremiumClassFlight</option>
+        <option>LongBusinessClassFlight</option>
+        <option>LongFirstClassFlight</option>
+      </select>
+      <button id="search2" class="api-button">search</button>
+      <div class="testing"></div>
+    </div>
 
-                <!-- framework for the left side of the footer in the container -->
-          <div class="right">
-            <h1>Our Newsletter</h1>
-            <div class="border"></div>
-            <p>Enter Your Email to get news and updates.</p>
-            <form action="" class="newsletter-form">
-              <input type="text" class="txtb" placeholder="Enter Your Email">
-              <input type="submit" class="btn" value="Submit">
-            </form>
-              <!-- framework for the right side of the footer that also contains a form -->
+    <h3>Public Transportation</h3>
+    <input type="text" id="public-distance" placeholder="distance mi" />
+      <!-- <input type="text" id="public-type" placeholder="Public Transportation type" /> -->
+      <select id="public-type">
+        <option>Public Type</option>
+        <option>Taxi</option>
+        <option>EcoBus</option>
+        <option>Coach</option>
+        <option>NationalTrain</option>
+        <option>LightRail</option>
+        <option>Subway</option>
+      </select>
+      <button id="search3" class="api-button">search</button>
+      <div class="testing3"></div>
+    </div>
+
+
+    <h1 style="padding-top: 10%;">C02 Emissions in the USA Over the Years</h1>
+    <div class="searchBox8" style="padding-right: 25%;">
+      <!-- <input type="text" id="vehicle" placeholder="vehicle type" /> -->
+      <div>
+      <button class='api-button'id="year2010">2010</button>
+      <div id="p10" style="color:white; "></div>
+      </div>
+
+      <div>
+      <button class='api-button' id="year2011">2011</button>
+      <div id="p11" style="color:white"></div>
+    </div>
+
+      <div>
+      <button class='api-button' id="year2012">2012</button>
+      <div id="p12" style="color:white"></div>
+      </div>
+
+      <div>
+      <button class='api-button' id="year2013">2013</button>
+      <div id="p13" style="color:white"></div>
+    </div>
+
+      <div>
+      <button class='api-button' id="year2014">2014</button>
+      <div id="p14" style="color:white"></div>
+      </div>
+
+      <div>
+      <button class='api-button' id="year2015">2015</button>
+      <div id="p15" style="color:white"></div>
+      </div>
+
+      <div>
+      <button class='api-button' id="year2016">2016</button>
+      <div id="p16" style="color:white"></div>
+      </div>
+
+      <div>
+      <button class='api-button' id="year2017">2017</button>
+      <div id="p17" style="color:white"></div>
+    </div>
+
+      <div>
+      <button class='api-button' id="year2018">2018</button>
+      <div id="p18" style="color:white"></div>
+      </div>
+
+      <div>
+      <button class='api-button' id="year2019">2019</button>
+      <div id="p19" style="color:white"></div>
+      </div>
+
+      <div>
+      <button class='api-button' id="year2020">2020</button>
+      <div id="p20" style="color:white"></div>
+      </div>
+
+    </div>   
+
+
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="left">
+          <img
+            src="images/BlueMarbleLogo.png"
+            class="logo"
+            alt="Webpage Logo"
+          />
+          <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
+          <p class="copyright">Copyright &copy; 2022, Created By Blue Marble</p>
         </div>
-      </footer>
+
+        <!-- framework for the left side of the footer in the container -->
+        <div class="right">
+          <h1>Our Newsletter</h1>
+          <div class="border"></div>
+          <p>Enter Your Email to get news and updates.</p>
+          <form action="" class="newsletter-form">
+            <input type="text" class="txtb" placeholder="Enter Your Email" />
+            <input type="submit" class="btn" value="Submit" />
+          </form>
+          <!-- framework for the right side of the footer that also contains a form -->
+        </div>
+      </div>
+    </footer>
+    <script src="resource1.js"></script>
   </body>
 </html>

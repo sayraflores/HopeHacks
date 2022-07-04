@@ -7,11 +7,21 @@ const Post = require('../models/HopeDb');
 //making routes outside of module for cleanliness to export them into another file
 
 
-router.get('/', (req,res) => {
-    res.send('we are on this page')
+//gets the data from all of the posts I've made
+router.get('/', async (req,res) => {
+    try{
+         //.find is a built in mongoose method that will return all of the posts you've made
+        const thisAPI = await Post.find();
+        res.json(thisAPI);
+    }
+    catch(err){
+        res.json({message: err})
+    }
+   
+    
 });
-//turning the posts data into a new post, then saving it to our database
-router.post('/', (req, res) => {
+//submits a post to our database
+router.post('/', async (req, res) => {
     const post = new HopeDb({
         year: req.body.year,
         co2: req.body.co2,
@@ -20,19 +30,56 @@ router.post('/', (req, res) => {
         oil_co2_per_capita: req.body.oil_co2_per_capita,
         co2_growth_prct: req.body.co2_growth_prct
     });
-
-    post.save()
-    //this returns a promsie
-    .then(data => {
-        //responding with a json
-        res.json(data);
-    })
-    .catch(err => {message: err});
+    //trying this block of code, if unsuccessful it will hit the catch block and return error message
+    try{
+        const savedPost = await post.save();
+    res.json(savedPost);
+    }
+    catch(err){
+        res.json({message: err})
+    }
 });
 
+//getting a specific post, in this case, 'EntryID' will be any value added after localhost4000/hope1
+router.get('/:EntryID', async (req, res) => {
+    try{
+    //this method allows us to find a particular entry by it's id, this is good because each entry is given it's own unique id
+    const entry = await Post.findById(req.params.EntryID);
+    res.json(entry);
+    }
+    catch(err){
+        res.json({message: err})
+    }
+})
 
-// router.get('/specific', (req,res) => {
-//     res.send('specific post')
-// });
+
+//deleting a post
+router.delete('/:EntryID', async (req, res) =>{
+    try{
+    //this method removes an entry, we're specifying we want to remove an entry based on the id, which will be the "EntryID"
+    const deletedEntry = await Post.remove({_id: req.params.EntryID});
+    res.json(deletedEntry)
+    }
+    catch(err){
+        res.json({message: err})
+    }
+
+})
+
+
+//updating a post
+router.patch('/:EntryID', async (req, res) =>{
+    try{
+    //this method allows us to update an entry, it takes an identiier, and the actaul proerties you want to update
+    const updatedEntry = await Post.updateOne(
+        {_id: req.params.EntryID}, 
+        {$set: {Year: req.body.year}});
+        res.json(updatedEntry);
+    }
+    
+    catch(err){
+            res.json({message: err})
+    }
+})
 
 module.exports = router;
