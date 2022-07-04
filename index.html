@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/testing.css" />
     <link rel="stylesheet" href="./css/nav&foot.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/cee9acc2bf.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
@@ -55,12 +69,13 @@
     <!-- <div class="content">
           <h1><a href="resource1.html">Click Here To Learn About Pollution</a></h1>
           </div> -->
+
     <section>
       <div class="pollution">
         <div class="pollutionText">
           <p>
             Pollution is the introduction of harmful materials into the
-            environment. These harmful materials are called pollutants.Although
+            environment. These harmful materials are called pollutants. Although
             environmental pollution can be caused by natural events such as
             forest fires and active volcanoes, use of the word pollution
             generally implies that the contaminants have an anthropogenic
@@ -72,48 +87,63 @@
             as long as there was enough space available for each individual or
             group. However, with the establishment of permanent settlements by
             great numbers of people, pollution became a problem, and it has
-            remained one ever since. Effects of pollution on the Earth include
-            environmental deterioration, impacts on the health of living
-            organisms, global warming, depletion of the ozone layer and reduced
-            efficiency or infertility of farm lands and crop fields. The sources
-            of pollution vary widely, and so do its effects. Pollution affects
-            all areas of the Earth, including the water, soil and atmosphere, on
-            microscopic and macroscopic levels, causing immediate harm or
-            long-term damage. Environmental degradation is among the primary
-            negative impacts of pollution on the Earth. This includes a decline
-            in air and water quality, which is caused by the introduction of
-            harmful toxins and pollutants. These substances do not generally
-            biodegrade. Instead, they linger in water and the air and disrupt
-            natural processes. One negative effect of air pollution is the
-            addition of surplus amounts of carbon dioxide into the atmosphere.
-            This creates levels of dense smog, which may prevent sunlight from
-            reaching the earth. In turn, this diminishes the ability of plants
-            to carry out the life-supporting process of photosynthesis.
-            Pollution also reduces air quality, which has detrimental effects on
-            humans and animals by causing respiratory irritation and asthma.
-            Lastly, pollution in the form of insecticides and pesticides may
-            interfere with the growth of crops and introduce toxins into key
-            water sources.
+            remained one ever since.
+            <br />
+            <br />
+            <br />
+            Effects of pollution on the Earth include environmental
+            deterioration, impacts on the health of living organisms, global
+            warming, depletion of the ozone layer and reduced efficiency or
+            infertility of farm lands and crop fields. The sources of pollution
+            vary widely, and so do its effects. Pollution affects all areas of
+            the Earth, including the water, soil and atmosphere, on microscopic
+            and macroscopic levels, causing immediate harm or long-term damage.
+
+            <br />
+            <br />
+            Environmental degradation is among the primary negative impacts of
+            pollution on the Earth. This includes a decline in air and water
+            quality, which is caused by the introduction of harmful toxins and
+            pollutants. These substances do not generally biodegrade. Instead,
+            they linger in water and the air and disrupt natural processes. One
+            negative effect of air pollution is the addition of surplus amounts
+            of carbon dioxide into the atmosphere. This creates levels of dense
+            smog, which may prevent sunlight from reaching the earth. In turn,
+            this diminishes the ability of plants to carry out the
+            life-supporting process of photosynthesis. Pollution also reduces
+            air quality, which has detrimental effects on humans and animals by
+            causing respiratory irritation and asthma. Lastly, pollution in the
+            form of insecticides and pesticides may interfere with the growth of
+            crops and introduce toxins into key water sources.
           </p>
         </div>
       </div>
     </section>
-    <!--SLIDESHOW BEGINS  -->
+
+    <!-- SLIDESHOW BEGINS -->
     <div class="slideshow-container">
+      <i class="fa-solid fa-arrow-right" id="nextButton"></i>
+      <i class="fa-solid fa-arrow-left" id="prevButton"></i>
       <div class="carousel-slide">
-        <image src="images/plastic.png" alt="airpollution"></image>
+        <img src="images/plastic.png" id="lastClone" />
         <!-- repeated image for slideshow to appear like its repeated -->
-        <image src="images/airpollution.jpeg" alt="airpollution"></image>
-        <image src="images/morepollution.png" alt="pollution"></image>
-        <image src="images/trash.png" alt="trash pollution"></image>
-        <image src="images/waterpollution.png" alt="water pollution"></image>
-        <image src="images/plastic.png" alt="plastic pollution"></image>
-        <image src="images/airpollution.jpeg" alt="airpollution"></image>
+        <img src="images/airpollution.jpeg" alt="airpollution" />
+        <img src="images/morepollution.png" alt="pollution" />
+        <img src="images/trash.png" alt="trash pollution" />
+        <img src="images/waterpollution.png" alt="water pollution" />
+        <img src="images/plastic.png" alt="plastic pollution" />
+        <img
+          src="images/airpollution.jpeg"
+          id="firstClone"
+          alt="airpollution"
+        />
         <!-- repeated image for slideshow to appear like its repeated -->
       </div>
     </div>
-    <button id="prevButton">Previous</button>
-    <button id="nextButton">Next</button>
+    <!--
+ <button id="prevButton">Previous</button>
+ <button id="nextButton">Next</button>
+      -->
     <footer>
       <div class="footer-container">
         <div class="left">
