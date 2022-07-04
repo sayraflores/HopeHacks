@@ -105,6 +105,10 @@
 
 //  // SLIDESHOW STARTS HERE// 
 
+
+ // SLIDESHOW STARTS HERE// 
+
+
 const carouselSlide = document.querySelector('.carousel-slide') // selecting div on html file//
 const carouselImages = document.querySelectorAll('.carousel-slide img') // selecting all of the images on slideshow// 
 
@@ -163,5 +167,9 @@ carouselSlide.addEventListener('transitionend', () => {
               counter = carouselImages.length -2; // updates counter and takes away repeated images//
               carouselSlide.style.transform = 'translateX(' + ( - size * counter) + 'px)';
 
+
         }
     })
+
+
+

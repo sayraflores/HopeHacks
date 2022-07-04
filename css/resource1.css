@@ -1,0 +1,41 @@
+.tools {
+  font-family: "Poppins", sans-serif;
+  color: rgb(130, 163, 161);
+  /* margin-bottom: 2rem; */
+  padding-top: 3rem;
+  margin-left: 10%;
+}
+
+.api-button {
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: rgb(159, 196, 144);
+  color: rgb(1, 25, 54);
+
+  padding: 10px 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 1.6rem;
+  font-weight: bolder;
+}
+
+
+.searchBox8{
+  display: grid;
+    grid-template-columns: repeat(11, auto 1fr);
+    grid-column-gap: 5em;
+    /* grid-template-rows: 1fr 1fr ; */
+    /* grid-row-gap: 5em; */
+    /* text-align: center; */
+    padding-top: 5%;
+    padding-bottom: 20%;
+    
+}
