@@ -24,6 +24,7 @@
     display: grid;
     column-gap: 5%;
     row-gap: 30%;
+    line-height: 1.2;
   }
   /* effects images height and width */
   img {
@@ -95,7 +96,7 @@
     }
   }
 
-  @media  only screen and (max-width: 600px) {
+  @media (max-width: 600px) and (min-width: 551px) {
     #meetTeam {
       font-size: 35px;
     }
@@ -106,10 +107,14 @@
     #aboutBody {
       font-size: 15px;
   }
-
-  @media  only screen and (max-width: 550px) {
-    #teamPlayersGrid {
-      margin-bottom: 65%;
-    }
+}
+@media (max-width: 550px) and (min-width: 300px) {
+  #teamPlayersGrid {
+    margin-bottom: 600px;
+  }
+}
+@media (max-width: 299px) {
+  #teamPlayersGrid {
+    margin-bottom: 750px;
   }
 }
