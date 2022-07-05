@@ -34,7 +34,7 @@ app.get('/', (req,res) => {
 
 
 //connecting to my database
-mongoose.connect(process.env.DB_CONNECTION, () =>{
+mongoose.connect(process.env.DB_CONNECTION.toString(), () =>{
     console.log('Successfully connected to DB')
 })
 
