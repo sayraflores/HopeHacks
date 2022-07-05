@@ -29,9 +29,10 @@ h3 {
 
 
 .searchBox8{
+  width: 100%;
   display: grid;
     grid-template-columns: repeat(11, auto 1fr);
-    grid-column-gap: 5em;
+    grid-column-gap: 3em;
     /* grid-template-rows: 1fr 1fr ; */
     /* grid-row-gap: 5em; */
     /* text-align: center; */
