@@ -1,6 +1,6 @@
 HopeHacks 'P' for Pollution!
 
-Simple overview of use/purpose.
+The goal of our website is to provide solutions and raise awareness about the effects of pollution and CO2 emissions.
 
 ## Description
 
@@ -10,41 +10,44 @@ An in-depth paragraph about your project and overview of use.
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+* body-Parser
+* cors
+* dotenv
+* ejs
+* express-ejs-layouts
+* mongoose
+* nodemon
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* To get started git clone this repo into your local machine
+* In the app.js folder, use the port of which you'd like if 8080 is in use
+* You can also change the script in package.json folder to fit you needs for starting node
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
+* To run the program, from your CLI CD into wherever you installed the program at
+* Then, type in 'node app.js' in the CLI to start the server
+* Finally, go into a browser and type in localhost:8080 (if you changed the port, use the one you changed instead)
 ```
-code blocks for commands
+howdy
 ```
 
 ## Help
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+If Any issues arise please email 'BlueMarblehope@gmail.com'
+
 
 ## Authors
 
-Contributors names and contact info
+Contributors
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Tyson Unce 
+[@tyson-unce](github.com/tyson-unce)
+
 
 ## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
 * 0.1
     * Initial Release
 
@@ -52,11 +55,4 @@ ex. [@DomPizzie](https://twitter.com/dompizzie)
 
 This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
-## Acknowledgments
 
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
