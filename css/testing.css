@@ -13,7 +13,6 @@
   min-height: 100%; /* cover entire page  */
   object-fit: cover; /* sizes the background video to keep its original aspect ratio while filling the screen, clipping out edges of the video when necessary. */
   z-index: 1; /* use this to send img to background */
-  
  } 
 
 
@@ -50,12 +49,62 @@ padding: 20px;
  .slideshow-container {
   width: 40%; /*  moves content over  */
   margin: auto; /* centers images on site */
-  /* overflow: hidden; */
-  border: 5px solid black; /* changes color of slideshow border */
+  overflow: hidden;
+  border: 2px solid black;/* changes color of slideshow border */
 }
 
 .carousel-slide {
 display: flex; /* displays images next to each other */
 width: 100%;
 height: 500px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+section p {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  border: 5px double #C0DFA1;
+}
+
+
+#prevButton {
+  position: absolute;
+  /* top: 50%; */
+  z-index: 10;
+  /* left: 5%; */
+  font-size: 40px;
+  color: purple;
+  /* opacity: 0.5; */
+  cursor: pointer;
+
+}
+
+
+#nextButton {
+  position: absolute;
+  /* top: 90%; */
+  z-index: 10%;
+  /* right: 10%; */
+  /* text-align: center; */
+  left:3%;
+  font-size: 230px;
+  color: purple;
+  /* opacity: 0.5; */
+  cursor: pointer;
+
+}
+
+.pollutionText p {
+  border: double px #C0DFA1;
+  padding: 40px;
+  margin: 20px;
+  color: white;
+  background-color: #82A3A1;
+
 }

@@ -1,3 +1,4 @@
+/* Overall Changes on the about us page */
 #aboutBody {
     background-color: rgb(1, 25, 54);
     font-family: "Poppins", sans-serif;
@@ -6,51 +7,114 @@
     color: white;
     text-align: center;
   }
+  /* Changes only affecting title (Meet the Team) */
   #meetTeam {
     text-align: center;
     font-size: 50px;
     color: rgb(192, 223, 161);
     grid-column-start:1 ;
     grid-column-end: 6;
-    grid-row:1; 
+    grid-row:1;
+    margin-bottom: -20%;
   }
+  /* the whole section that holds all columns and rows */
   #teamPlayersGrid {
     margin-top: 5%;
+    margin-bottom: 30%;
     display: grid;
     column-gap: 5%;
     row-gap: 30%;
+    line-height: 1.2;
   }
+  /* effects images height and width */
   img {
     width: 300px;
     height: 300px;
   }
+  /* effects the column that devloper Tyson is on */
   #devTyson {
     text-align: center;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row: 2;
   }
+    /* effects the column that devloper Osvaldo is on */
   #devOsvaldo {
     text-align: center;
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row: 2;
   }
+  /* effects the column that devloper Sayra is on */
   #devSayra {
     text-align: center;
     grid-column-start: 4;
     grid-column-end: 6;
     grid-row: 2;
   }
+    /* effects the column that devloper Kyla is on */
   #devKyla {
     text-align: center;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row: 3;
   }
+      /* effects the column that devloper Alejandro is on */
   #devAlejandro {
     text-align: center;
     grid-column-start: 3;
     grid-column-end: 6;
     grid-row: 3;
   }
+/* Media Queries for footer to not overlap and decrease pixels on fonts and images */
+  @media (max-width: 1500px) and (min-width: 1000px) {
+    img {
+      height: 250px;
+      width: 250px;
+    }
+    #aboutBody {
+      font-size: 25px;
+    }
+    #teamPlayersGrid {
+      margin-bottom: 45%;
+    }
+  }
+
+  @media (max-width: 999px) and (min-width: 601px) {
+    #meetTeam {
+      font-size: 40px;
+    }
+    img {
+      height: 150px;
+      width: 150px;
+    }
+    #aboutBody{
+      font-size: 20px;
+    }
+    #teamPlayersGrid{
+      margin-bottom: 65%;
+    }
+  }
+
+  @media (max-width: 600px) and (min-width: 551px) {
+    #meetTeam {
+      font-size: 35px;
+    }
+    img {
+      height: 100px;
+      width: 100px;
+    }
+    #aboutBody {
+      font-size: 15px;
+  }
+}
+@media (max-width: 550px) and (min-width: 300px) {
+  #teamPlayersGrid {
+    margin-bottom: 600px;
+  }
+}
+@media (max-width: 299px) {
+  #teamPlayersGrid {
+    margin-bottom: 750px;
+  }
+}
