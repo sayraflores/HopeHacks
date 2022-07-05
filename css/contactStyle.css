@@ -1,0 +1,93 @@
+body {
+    background-color: #011936;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* #background-Video { */
+    /* position: static; */  /* keeps the video in place when user scrolls  */
+    /* min-width: 100%; */   /* cover entire page */
+    /* min-height: 100%; */ /* cover entire page  */
+    /* object-fit: cover; */ /* sizes the background video to keep its original aspect ratio while filling the screen, clipping out edges of the video when necessary. */
+   /*  z-index: -1; */ /* use this to send img to background */
+/* } */
+  
+h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    color: #9FC490;
+    padding-top: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    color: #fff;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    resize: vertical;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+  
+input[type=submit] {
+    padding: 18px 40px;
+    margin-top: 25px;
+    font-size: 20px;
+    color: #f1f1f1;
+    background: #9FC490;
+    border: none;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: opacity .3s linear;
+}
+  
+input[type=submit]:hover {
+    opacity: .7;
+    color: #C0DFA1;
+}
+
+.contact_form {
+    border-radius: 5px;
+    padding:200px;
+    padding-top: 50px;
+    display: flex;
+    display: block;
+   text-align: center;
+}
+
+form {
+    width: 900px;
+    display: inline-block;
+    align-items: center;
+}
+
+.col-75 {
+    width: 100%;
+    margin: 15px;
+    align-items: center;
+}
+
+.state {
+    width: 100%;
+}
+  
+  
+  /*when the screen is less than 820px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 820px) {
+    .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+}
