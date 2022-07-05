@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 require('dotenv/config');
 const bodyParser = require('body-parser');
 var fs = require('fs');
+var port = process.env.PORT || 8080;
 
 
 // //middlewares - function that runs when route is visited
@@ -63,10 +64,10 @@ mongoose.connect('mongodb+srv://tyson-unce:edu3vFuL59NerLj@nodetut.oqzjc.mongodb
 
 
 //how do we start listening to the server
-app.listen(4000, (err) =>{
+app.listen(port, (err) =>{
     if(err){
         console.log('uh oh, there seems to be a problem')
     }
-    console.log('All good on port 4000')
+    console.log('All good on port 8080')
 });
 
