@@ -1,4 +1,4 @@
-### HopeHacks 'P' for Pollution!
+# HopeHacks 'P' for Pollution!
 
 The goal of our website is to provide solutions and raise awareness about the effects of pollution and CO2 emissions.
 
