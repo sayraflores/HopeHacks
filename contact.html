@@ -6,116 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/contactStyle.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/nav&foot.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('ckng4qPlLNlAPFv0D');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact_form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
-
+    <link rel="stylesheet" href="/css/testing.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
   </head>
-    <body>
-
-      <div class="navbar" id="navBar">
-        <img src="/HopeHacks/images/BlueMarbleLogo.png"
-              alt="Webpage logo" class="navLogo">
-              <a href="index.html" title="Home">Home</a>
-              <a href="resource1.html" title="Learn">Learn More</a>
-              <a href="aboutus.html" title="About">About Us</a>
-              <a href="contact.html" title="Contact">Contact</a>
-        <a href="javascript:void(0);" title="Menu" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
-              <!-- creating the frameowrk for the navigation menu -->
-
-          <!-- <video autoplay loop muted id ="background-Video">
-            <source src ="images/earth.mp4" type ="video/MP4">
-          </video>  -->
-
-
-        <h1>Contact Us</h1>
-        <h2>Please submit any inquiries or comments below </h2>
-        <section class="contact_form">
-          <form action=#>
-             <div class="row">
-                <div class="col-75">
-                  <input type="text" id="f-name" name="firstname" placeholder="Your First Name . . .">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-75">
-                  <input type="text" id="l-name" name="lastname" placeholder="Your Last Name . . .">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-75">
-                  <input type="text" id="email" name="email" placeholder="Your Email Address . . .">
-                </div>
-              </div>
-              <div class="row">
-                  <div class="col-75">
-                    <select id="state" name="state">
-                        <option value="Texas">Texas</option>
-                        <option value="North Carolina">North Carolina</option>
-                        <option value="Georgia">Georgia</option>
-                        <option value="Virginia">Virginia</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-75">
-                    <textarea id="message" name="message" placeholder="Your Message . . ." style="height:200px"></textarea>
-                  </div>
-                </div>
-                <div class="row">
-                  <input type="submit" value="Submit">
-                </div>
-          </form>
-        </section>
-
-        <footer>
-          <div class="footer-container">
-            <div class="left">
-              <img src="/HopeHacks/images/BlueMarbleLogo.png" class="logo" alt="Webpage Logo">
-              <div class="social-media">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-              </div>
-              <p class="copyright">Copyright &copy; 2022, Created By Blue Marble</p>
-            </div>
-                  <!-- frameowrk for the left side of the footer in the container -->
-            <div class="right">
-              <h1>Our Newsletter</h1>
-              <div class="border"></div>
-              <p>Enter Your Email to get news and updates.</p>
-              <form action=# class="newsletter-form">
-                <input type="text" class="txtb" placeholder="Enter Your Email">
-                <input type="submit" class="btn" value="Submit">
-              </form>
-                <!-- framework for the right side of the footer that also contains a form -->
-            </div>
+  <body>
+    <div class="navbar" id="navBar">
+      <a
+        ><img
+          src="/images/BlueMarbleLogo.png"
+          alt="Webpage logo"
+          class="navLogo"
+      /></a>
+      <a href="index.html" title="Home">Home</a>
+      <a href="resource1.html" title="Learn">Resources</a>
+      <a href="aboutus.html" title="About">About Us</a>
+      <a href="contact.html" title="Contact">Contact</a>
+      <a href="resource2.html" title="map">Map</a>
+      <a
+        href="javascript:void(0);"
+        title="Menu"
+        style="font-size: 18px"
+        class="icon"
+        onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
+    <!-- creating the frameowrk for the navigation menu -->
+    <footer>
+      <div class="footer-container">
+        <div class="left">
+          <img
+            src="images/BlueMarbleLogo.png"
+            class="logo"
+            alt="Webpage Logo"
+          />
+          <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
           <p class="copyright">Copyright &copy; 2022, Created By Blue Marble</p>
         </div>
