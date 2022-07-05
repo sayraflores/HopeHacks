@@ -4,7 +4,7 @@ The goal of our website is to provide solutions and raise awareness about the ef
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+Our website implements API's and is mobile friendly, in order to give you the best experience possible on your mission to help our planet and reduce your carbon footprint.
 
 ## Getting Started
 
@@ -41,6 +41,14 @@ If Any issues arise please email 'BlueMarblehope@gmail.com'
 Contributors
 
 [Tyson Unce](https://github.com/tyson-unce)
+
+[Sayra Flores](https://github.com/sayraflores)
+
+[Alejandro Lopez](https://github.com/AlejandroLO098)
+
+[Kyla Wootson](https://github.com/KylaB98)
+
+[Osvaldo Ruiz Garcia](https://github.com/Osvruizgar)
 
 
 ## Version History
