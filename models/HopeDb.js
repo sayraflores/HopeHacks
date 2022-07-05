@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-//making our mongoose schema
+//making our mongoose schema, sets the outline for entering all data
 const hopeHacksSchema = mongoose.Schema({
 year: Number,
 co2: Number,

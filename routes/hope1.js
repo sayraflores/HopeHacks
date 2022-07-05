@@ -1,9 +1,12 @@
+//importing modules and our database
 const express = require('express');
 const HopeDb = require('../models/HopeDb');
 
 const router = express.Router();
 
+//accessing our database we created in our models folder
 const Post = require('../models/HopeDb');
+
 //making routes outside of module for cleanliness to export them into another file
 
 router.get("/index", (req, res) => {
