@@ -92,8 +92,7 @@ function publicTravel(e) {
 }
 
 
-const p10 = document.getElementById('p10');
-const p11 = document.getElementById('p11');
+//setting year variables to their ID's in the DOM
 const year2010 = document.getElementById('year2010');
 const year2011 = document.getElementById('year2011');
 const year2012 = document.getElementById('year2012');
@@ -107,6 +106,8 @@ const year2019 = document.getElementById('year2019');
 const year2020 = document.getElementById('year2020');
 
 
+
+//fetching api's upon click and showing their data according to their year
 year2010.addEventListener('click', () =>{
   fetch('http://localhost:8080/data')
   .then(result => result.json())
