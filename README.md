@@ -40,7 +40,7 @@ If Any issues arise please email 'BlueMarblehope@gmail.com'
 
 Contributors
 
-]Tyson Unce](https://github.com/tyson-unce))
+[Tyson Unce](https://github.com/tyson-unce)
 
 
 ## Version History
