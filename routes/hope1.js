@@ -85,11 +85,4 @@ router.patch('/:EntryID', async (req, res) =>{
 
 
 
-
-
-router.get()
-
-
-
-
 module.exports = router;
