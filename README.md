@@ -1,4 +1,4 @@
-HopeHacks 'P' for Pollution!
+##HopeHacks 'P' for Pollution!
 
 The goal of our website is to provide solutions and raise awareness about the effects of pollution and CO2 emissions.
 
@@ -40,8 +40,7 @@ If Any issues arise please email 'BlueMarblehope@gmail.com'
 
 Contributors
 
-Tyson Unce 
-([github.com/tyson-unce](https://github.com/tyson-unce))
+(Tyson Unce](https://github.com/tyson-unce))
 
 
 ## Version History
