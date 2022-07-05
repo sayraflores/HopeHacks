@@ -20,18 +20,16 @@ An in-depth paragraph about your project and overview of use.
 
 ### Installing
 
-* To get started git clone this repo into your local machine
+* To get started git clone this repo into your local machine ```git clone https://github.com/tyson-unce/HopeHacks.git```
 * In the app.js folder, use the port of which you'd like if 8080 is in use
 * You can also change the script in package.json folder to fit you needs for starting node
 
 ### Executing program
 
 * To run the program, from your CLI CD into wherever you installed the program at
-* Then, type in 'node app.js' in the CLI to start the server
+* Then, type in ```node app.js``` in the CLI to start the server
 * Finally, go into a browser and type in localhost:8080 (if you changed the port, use the one you changed instead)
-```
-howdy
-```
+
 
 ## Help
 
@@ -43,7 +41,7 @@ If Any issues arise please email 'BlueMarblehope@gmail.com'
 Contributors
 
 Tyson Unce 
-[@tyson-unce](github.com/tyson-unce)
+([github.com/tyson-unce](https://github.com/tyson-unce))
 
 
 ## Version History
