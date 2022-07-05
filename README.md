@@ -33,7 +33,7 @@ Our website implements API's and is mobile friendly, in order to give you the be
 
 ## Help
 
-If Any issues arise please email 'BlueMarblehope@gmail.com'
+If any issues arise please email 'BlueMarblehope@gmail.com'
 
 
 ## Authors
@@ -58,6 +58,6 @@ Contributors
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the LICENSE.md file for details
 
 
