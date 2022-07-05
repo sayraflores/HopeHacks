@@ -6,6 +6,7 @@ const app = express();
 const mongoose = require('mongoose');
 require('dotenv/config');
 const bodyParser = require('body-parser');
+var fs = require('fs');
 
 
 // //middlewares - function that runs when route is visited
@@ -25,7 +26,29 @@ app.use('/hope1', hope1Route)
 
 //creating routes
 app.get('/', (req,res) => {
-    res.send('we are on home')
+    fs.readFile('./index.html', null, (error, data) =>{
+        if (error){
+            res.writeHead(404);
+            res.write('file not found')
+        }
+        else{
+            res.write(data);
+        }
+        res.end();
+    })
+});
+
+app.get('/', (req,res) => {
+    fs.readFile('./index.html', null, (error, data) =>{
+        if (error){
+            res.writeHead(404);
+            res.write('file not found')
+        }
+        else{
+            res.write(data);
+        }
+        res.end();
+    })
 });
 
 // app.get('/hope1', (req,res) => {
