@@ -1,3 +1,4 @@
+//using the package we installed
 const mongoose = require('mongoose');
 
 //making our mongoose schema, sets the outline for entering all data
