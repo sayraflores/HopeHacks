@@ -16,8 +16,8 @@ h1 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 60px;
-    color: #fff;
-    padding-top: 100px;
+    color: #9FC490;
+    padding-top: 50px;
 }
 
 h2 {
@@ -60,7 +60,7 @@ input[type=submit]:hover {
 
 .contact_form {
     border-radius: 5px;
-    padding:100px;
+    padding:200px;
     padding-top: 50px;
     display: flex;
     display: block;
