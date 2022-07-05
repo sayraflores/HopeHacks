@@ -6,9 +6,27 @@ const router = express.Router();
 const Post = require('../models/HopeDb');
 //making routes outside of module for cleanliness to export them into another file
 
+router.get("/index", (req, res) => {
+    res.render("index");
+  });
+router.get("/", (req, res) => {
+    res.render("index");
+  });
+router.get("/resources", (req, res) => {
+    res.render("resource1");
+  });
+router.get("/map", (req, res) => {
+    res.render("resource2");
+  });
+router.get("/contact", (req, res) => {
+    res.render("contact");
+  });
+router.get("/aboutus", (req, res) => {
+    res.render("aboutus");
+  });
 
 //gets the data from all of the posts I've made
-router.get('/', async (req,res) => {
+router.get('/data', async (req,res) => {
     try{
          //.find is a built in mongoose method that will return all of the posts you've made
         const thisAPI = await Post.find();
@@ -81,6 +99,7 @@ router.patch('/:EntryID', async (req, res) =>{
             res.json({message: err})
     }
 })
+
 
 
 

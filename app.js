@@ -8,7 +8,10 @@ require('dotenv/config');
 const bodyParser = require('body-parser');
 var fs = require('fs');
 var port = process.env.PORT || 8080;
-
+app.set('view engine', 'ejs');
+app.use(express.static("public"));
+app.use("/css", express.static(__dirname + "public/css"));
+// app.set('views', __dirname + '/views')
 
 // //middlewares - function that runs when route is visited
 //converting posted data to json
@@ -18,47 +21,22 @@ app.use(cors());
 
 
 //importing every route from hope1.js 
-const hope1Route = require('./routes/hope1');
+const hope1Router = require('./routes/hope1');
 
 //using imported routes
-app.use('/hope1', hope1Route)
+app.use('/', hope1Router)
 
 
 
-//creating routes
-app.get('/', (req,res) => {
-    fs.readFile('./index.html', null, (error, data) =>{
-        if (error){
-            res.writeHead(404);
-            res.write('file not found')
-        }
-        else{
-            res.write(data);
-        }
-        res.end();
-    })
+
+
+app.get('/hope1', (req,res) => {
+    res.send('we are on this posts')
 });
-
-app.get('/', (req,res) => {
-    fs.readFile('./index.html', null, (error, data) =>{
-        if (error){
-            res.writeHead(404);
-            res.write('file not found')
-        }
-        else{
-            res.write(data);
-        }
-        res.end();
-    })
-});
-
-// app.get('/hope1', (req,res) => {
-//     res.send('we are on this posts')
-// });
 
 
 //connecting to my database
-mongoose.connect('mongodb+srv://tyson-unce:edu3vFuL59NerLj@nodetut.oqzjc.mongodb.net/nodetut', () =>{
+mongoose.connect(process.env.DB_CONNECTION, () =>{
     console.log('Successfully connected to DB')
 })
 

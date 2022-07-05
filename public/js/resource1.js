@@ -108,67 +108,67 @@ const year2020 = document.getElementById('year2020');
 
 
 year2010.addEventListener('click', () =>{
-  fetch('http://localhost:4000/hope1')
+  fetch('http://localhost:8080/data')
   .then(result => result.json())
   .then(data => p10.innerHTML = `Total CO2e: <br> ${data[0]['co2']} <br><br> CO2e per Capita:<br>${data[0]['co2_per_capita']} <br><br> CO2e from Burned Oil:<br>${data[0]['oil_co2']} <br><br> CO2e from Burned Oil per Capita: <br>${data[0]['oil_co2_per_capita']} <br><br> Total CO2e growth % from previous year:<br> ${data[0]['co2_growth_prct']}`)
 })
 
 year2011.addEventListener('click', () =>{
-fetch('http://localhost:4000/hope1')
+fetch('http://localhost:8080/data')
   .then(result => result.json())
   .then(data => p11.innerHTML = `Total CO2e: <br> ${data[1]['co2']} <br><br> CO2e per Capita:<br>${data[1]['co2_per_capita']} <br><br> CO2e from Burned Oil:<br>${data[1]['oil_co2']} <br><br> CO2e from Burned Oil per Capita: <br>${data[1]['oil_co2_per_capita']} <br><br> Total CO2e growth % from previous year:<br> ${data[1]['co2_growth_prct']}`)
 })
 
 year2012.addEventListener('click', () =>{
-fetch('http://localhost:4000/hope1')
+fetch('http://localhost:8080/data')
   .then(result => result.json())
   .then(data => p12.innerHTML = `Total CO2e: <br> ${data[2]['co2']} <br><br> CO2e per Capita:<br>${data[2]['co2_per_capita']} <br><br> CO2e from Burned Oil:<br>${data[2]['oil_co2']} <br><br> CO2e from Burned Oil per Capita: <br>${data[2]['oil_co2_per_capita']} <br><br> Total CO2e growth % from previous year:<br> ${data[2]['co2_growth_prct']}`)
 })
 
 year2013.addEventListener('click', () =>{
-fetch('http://localhost:4000/hope1')
+fetch('http://localhost:8080/data')
   .then(result => result.json())
   .then(data => p13.innerHTML = `Total CO2e: <br> ${data[3]['co2']} <br><br> CO2e per Capita:<br>${data[3]['co2_per_capita']} <br><br> CO2e from Burned Oil:<br>${data[3]['oil_co2']} <br><br> CO2e from Burned Oil per Capita: <br>${data[3]['oil_co2_per_capita']} <br><br> Total CO2e growth % from previous year:<br> ${data[3]['co2_growth_prct']}`)
 })
 
 year2014.addEventListener('click', () =>{
-fetch('http://localhost:4000/hope1')
+fetch('http://localhost:8080/data')
   .then(result => result.json())
   .then(data => p14.innerHTML = `Total CO2e: <br> ${data[4]['co2']} <br><br> CO2e per Capita:<br>${data[4]['co2_per_capita']} <br><br> CO2e from Burned Oil:<br>${data[4]['oil_co2']} <br><br> CO2e from Burned Oil per Capita: <br>${data[4]['oil_co2_per_capita']} <br><br> Total CO2e growth % from previous year:<br> ${data[4]['co2_growth_prct']}`)
 })
 
 year2015.addEventListener('click', () =>{
-fetch('http://localhost:4000/hope1')
+fetch('http://localhost:8080/data')
   .then(result => result.json())
   .then(data => p15.innerHTML = `Total CO2e: <br> ${data[5]['co2']} <br><br> CO2e per Capita:<br>${data[5]['co2_per_capita']} <br><br> CO2e from Burned Oil:<br>${data[5]['oil_co2']} <br><br> CO2e from Burned Oil per Capita: <br>${data[5]['oil_co2_per_capita']} <br><br> Total CO2e growth % from previous year:<br> ${data[5]['co2_growth_prct']}`)
 })
 
 year2016.addEventListener('click', () =>{
-fetch('http://localhost:4000/hope1')
+fetch('http://localhost:8080/data')
   .then(result => result.json())
   .then(data => p16.innerHTML = `Total CO2e: <br> ${data[6]['co2']} <br><br> CO2e per Capita:<br>${data[6]['co2_per_capita']} <br><br> CO2e from Burned Oil:<br>${data[6]['oil_co2']} <br><br> CO2e from Burned Oil per Capita: <br>${data[6]['oil_co2_per_capita']} <br><br> Total CO2e growth % from previous year:<br> ${data[6]['co2_growth_prct']}`)
 })
 
 year2017.addEventListener('click', () =>{
-fetch('http://localhost:4000/hope1')
+fetch('http://localhost:8080/data')
   .then(result => result.json())
   .then(data => p17.innerHTML = `Total CO2e: <br> ${data[7]['co2']} <br><br> CO2e per Capita:<br>${data[7]['co2_per_capita']} <br><br> CO2e from Burned Oil:<br>${data[7]['oil_co2']} <br><br> CO2e from Burned Oil per Capita: <br>${data[7]['oil_co2_per_capita']} <br><br> Total CO2e growth % from previous year:<br> ${data[7]['co2_growth_prct']}`)
 })
 
 year2018.addEventListener('click', () =>{
-fetch('http://localhost:4000/hope1')
+fetch('http://localhost:8080/data')
   .then(result => result.json())
   .then(data => p18.innerHTML = `Total CO2e: <br> ${data[8]['co2']} <br><br> CO2e per Capita:<br>${data[8]['co2_per_capita']} <br><br> CO2e from Burned Oil:<br>${data[8]['oil_co2']} <br><br> CO2e from Burned Oil per Capita: <br>${data[8]['oil_co2_per_capita']} <br><br> Total CO2e growth % from previous year:<br> ${data[8]['co2_growth_prct']}`)
 })
 
 year2019.addEventListener('click', () =>{
-fetch('http://localhost:4000/hope1')
+fetch('http://localhost:8080/data')
   .then(result => result.json())
   .then(data => p19.innerHTML = `Total CO2e: <br> ${data[9]['co2']} <br><br> CO2e per Capita:<br>${data[9]['co2_per_capita']} <br><br> CO2e from Burned Oil:<br>${data[9]['oil_co2']} <br><br> CO2e from Burned Oil per Capita: <br>${data[9]['oil_co2_per_capita']} <br><br> Total CO2e growth % from previous year:<br> ${data[9]['co2_growth_prct']}`)
 })
 
 year2020.addEventListener('click', () =>{
-fetch('http://localhost:4000/hope1')
+fetch('http://localhost:8080/data')
   .then(result => result.json())
   .then(data => p20.innerHTML = `Total CO2e: <br> ${data[10]['co2']} <br><br> CO2e per Capita:<br>${data[10]['co2_per_capita']} <br><br> CO2e from Burned Oil:<br>${data[10]['oil_co2']} <br><br> CO2e from Burned Oil per Capita: <br>${data[10]['oil_co2_per_capita']} <br><br> Total CO2e growth % from previous year:<br> ${data[10]['co2_growth_prct']}`)
 })
