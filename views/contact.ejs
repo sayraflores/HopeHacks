@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blue Marble | Contact Us</title>
+    <title>Blue Marble | Contact</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/nav&foot.css" />
     <link rel="stylesheet" href="/css/testing.css" />
+    <link rel="stylesheet" href="css/secondcontact.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
       rel="stylesheet"
@@ -17,6 +18,36 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
     />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("ckng4qPlLNlAPFv0D");
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contact_form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            this.contact_number.value = (Math.random() * 100000) | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm("contact_service", "contact_form", this).then(
+              function () {
+                console.log("SUCCESS!");
+              },
+              function (error) {
+                console.log("FAILED...", error);
+              }
+            );
+          });
+      };
+    </script>
   </head>
   <body>
     <div class="navbar" id="navBar">
@@ -41,6 +72,66 @@
       >
     </div>
     <!-- creating the frameowrk for the navigation menu -->
+
+    <h1 class="h1-contact">Contact Us</h1>
+    <h2 class="h2-contact">Please submit any inquiries or comments below</h2>
+    <section class="contact_form">
+      <form action="#">
+        <div class="row">
+          <div class="col-75">
+            <input
+              type="text"
+              id="f-name"
+              name="firstname"
+              placeholder="Your First Name . . ."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-75">
+            <input
+              type="text"
+              id="l-name"
+              name="lastname"
+              placeholder="Your Last Name . . ."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-75">
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your Email Address . . ."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-75">
+            <select id="state" name="state">
+              <option value="Texas">Texas</option>
+              <option value="North Carolina">North Carolina</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Virginia">Virginia</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-75">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message . . ."
+              style="height: 200px"
+            ></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </section>
     <footer>
       <div class="footer-container">
         <div class="left">
